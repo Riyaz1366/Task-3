@@ -10,10 +10,6 @@ let Personaldata ={
     "GENDER"        : "MALE",
 } 
 
-let keys = Object.Keys(Personaldata);
-
-for ( let i=0; i<keys.length; i++)
-{
-
-   console.log(i + ":" +  Personaldata[i]);
-}
+for(let key in Personaldata) {
+    console.log(key + ": " + Personaldata[key]);
+  }
